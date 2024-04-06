@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainingAndCoordination"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:text="CyberThreat Detection"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="634dp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="100dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="389dp"
+            android:layout_height="558dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:padding="35dp"
+            android:text="Understanding Cyberthreats: Before you can detect cyberthreats, you need to understand what they are. Cyberthreats can include malware, phishing attacks, ransomware, DDoS attacks, insider threats, and more. Each type of threat has its own characteristics and indicators.
+
+Network Monitoring: Utilize network monitoring tools to track traffic patterns and detect anomalies. Look for unusual spikes in traffic, unexpected connections to external servers, or unusual data transfers. Tools like Wireshark, Snort, or Nagios can be helpful in this regard.
+
+Endpoint Protection: Install endpoint protection software on all devices connected to your network. This software can detect and block malicious activity on individual devices, such as malware infections or unauthorized access attempts. Examples include antivirus software, firewalls, and intrusion detection systems (IDS).
+
+Security Information and Event Management (SIEM): Implement a SIEM system to aggregate and analyze security data from various sources across your network. SIEM tools can help you correlate events, identify patterns, and detect potential security incidents in real-time. Popular SIEM solutions include Splunk, IBM QRadar, and LogRhythm.
+
+Threat Intelligence Feeds: Subscribe to threat intelligence feeds to stay updated on the latest cyber threats and attack techniques. These feeds provide valuable information about known malicious actors, malware signatures, and emerging vulnerabilities, helping you proactively identify and mitigate potential risks.
+
+User Behavior Analytics (UBA):Implement UBA solutions to monitor and analyze user behavior within your network. By establishing baseline behavior patterns for individual users or groups, UBA tools can detect deviations that may indicate insider threats or compromised accounts.
+
+Penetration Testing: Conduct regular penetration testing exercises to assess the security posture of your systems and infrastructure. Penetration testers simulate real-world cyber attacks to identify vulnerabilities and weaknesses that could be exploited by malicious actors. Address any identified issues promptly to strengthen your defenses.
+
+Security Awareness Training: Educate your employees about common cyber threats and best practices for cybersecurity. Human error is often a major contributing factor to security breaches, so raising awareness and promoting a security-conscious culture within your organization is crucial for effective threat detection and prevention.
+
+Incident Response Plan: Develop a comprehensive incident response plan outlining the steps to be taken in the event of a security breach or cyber attack. Define roles and responsibilities, establish communication channels, and outline procedures for containing and mitigating the impact of an incident. Regularly test and update your incident response plan to ensure its effectiveness.
+
+Continuous Monitoring and Improvement: Cybersecurity is an ongoing process, so it's essential to continuously monitor your systems, evaluate your security measures, and adapt to evolving threats. Regularly review your threat detection capabilities, adjust your strategies as needed, and stay informed about emerging cybersecurity trends and best practices."
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.975" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:gravity="center"
+        android:text="Display Prediction"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Virtual Yoga"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+
+  <HorizontalScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:gravity="center"
+          android:layout_gravity="center">
+
+
+          <ImageView
+              android:id="@+id/imageView2"
+              android:layout_width="1850dp"
+              android:layout_height="650dp"
+              android:src="@drawable/img_3"
+              android:layout_marginRight="5dp"
+              android:scaleType="centerCrop"/>
+
+          <ImageView
+              android:id="@+id/imageView3"
+              android:layout_width="400dp"
+              android:layout_height="650dp"
+              android:layout_marginRight="5dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/chi" />
+
+
+
+          <ImageView
+              android:id="@+id/imageView"
+              android:layout_width="450dp"
+              android:layout_height="650dp"
+              android:src="@drawable/vrt"
+              android:layout_marginRight="5dp"
+              android:scaleType="centerCrop"/>
+
+      </LinearLayout>
+
+  </HorizontalScrollView>
+
+</LinearLayout>
