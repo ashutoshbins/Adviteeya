@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Prediction</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        input[type="file"], input[type="submit"] {
+            background-color: #0f0;
+            color: #000;
+            border: 1px solid #0f0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #060;
+        }
+        input[type="file"]::-webkit-file-upload-button {
+            visibility: hidden;
+        }
+        input[type="file"]::before {
+            content: 'Select Image';
+            display: inline-block;
+            background: #0f0;
+            color: #000;
+            border: 1px solid #0f0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="file"]:hover::before {
+            background: #060;
+        }
+    </style>
+</head>
+<body>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*">
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
